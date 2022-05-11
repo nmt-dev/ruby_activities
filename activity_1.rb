@@ -33,10 +33,9 @@ puts contacts
 puts "solution no.4"
 puts "how old are you?"
 def age_increment(age)
-    i = 1
-    until i >= 5 do
-  puts "In 10 years you will be #{(i*10)+age}"
-   i += 1
+range = (10..40)
+range.step(10).each do |n| 
+  puts "In #{n} years you will be #{n+age}"
 end
 end
 
