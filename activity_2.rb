@@ -19,8 +19,8 @@ inputted_number=gets.to_i
 
 def between_checker(usernum)
     case usernum
-    when 0..50 return "Your number is between 0 and 50"
-    when  51..100 return "Your number is between 51 and 100"
+    when 0..50 then return "Your number is between 0 and 50"
+    when  51..100 then return "Your number is between 51 and 100"
     else return "Your number is greater than 100"
     end
 end
