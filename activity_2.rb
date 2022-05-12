@@ -1,24 +1,16 @@
 puts "solution #1"
 arr = [1,3,5,7,9,11]
 number = 3
-
-def num_checker(count,num)
-    if count>0
-        puts "#{num} is included in the array"
-    else puts "#{num} is not included in the array"
-    end
-end
-
-def counter(arr,num)
-            count = 0
+def num_checker(arr,num)
     arr.each do |element|
-        if element==num
-            count+=1
-        end
+         if element==num
+            return puts "#{num} is included in the array"
+         end
     end
-    num_checker(count,num)
+    puts "#{num} is not included in the array"
 end
-counter(arr,number)
+
+num_checker(arr,number)
 
 
 puts "solution #2"
