@@ -4,13 +4,13 @@ number = 3
 def num_checker(arr,num)
     arr.each do |element|
          if element==num
-            return puts "#{num} is included in the array"
+            return "#{num} is included in the array"
          end
     end
-    puts "#{num} is not included in the array"
+    "#{num} is not included in the array"
 end
 
-num_checker(arr,number)
+puts num_checker(arr,number)
 
 
 puts "solution #2"
@@ -19,13 +19,13 @@ inputted_number=gets.to_i
 
 def between_checker(usernum)
     case usernum
-    when 0..50 then puts "Your number is between 0 and 50"
-    when  51..100 then puts "Your number is between 51 and 100"
-    else puts "Your number is greater than 100"
+    when 0..50 return "Your number is between 0 and 50"
+    when  51..100 return "Your number is between 51 and 100"
+    else return "Your number is greater than 100"
     end
 end
 
-between_checker(inputted_number)
+puts between_checker(inputted_number)
 
 puts "solution #3"
     puts "Please input STOP"
@@ -43,6 +43,6 @@ def remainder_checker(arr)
             newarr.push(e)
         end
     end
-    p newarr
+    return newarr
 end
-remainder_checker(arr)
+p remainder_checker(arr)
