@@ -48,3 +48,23 @@ class CTO<Employee
         super
     end
 end
+
+class GoodDog
+    DOG_YEARS = 7
+
+    attr_accessor :name, :age
+
+    def initialize(name, age)
+    self.name = name
+    self.age = age
+    end
+
+    def some_method
+        self.human_years
+    end
+
+    def human_years
+        age * DOG_YEARS
+    end
+    
+end
