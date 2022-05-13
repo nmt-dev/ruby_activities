@@ -1,7 +1,8 @@
 #solution #1
 class Basketball_player
-    attr_accessor :name,:jersey_number,:score,:assists,:rebounds,:steals,:blocks
-    def initialize(name,jersey_number,score=0,assists=0,rebounds=0,steals=0,blocks=0)
+    attr_accessor :name, :jersey_number, :score, :assists, :rebounds, :steals, :blocks
+
+    def initialize(name, jersey_number, score=0, assists=0, rebounds=0, steals=0, blocks=0)
         @name = name
         @jersey_number = jersey_number
         @score = score
@@ -10,26 +11,32 @@ class Basketball_player
         @steals = steals
         @blocks = blocks
     end
-def shoot
-    puts "#{@name} for 3, bangggg"
-    @score+=3
-end
-def pass
-    puts "#{@name} nice assists"
-    @assists+=1
-end
-def jump
-    puts "#{@name} reboundo!"
-    @rebounds+=1
-end
-def swipe
-    puts "#{@name} swish he steals the ball!!"
-    @steals+=1
-end
-def defense
-    puts "#{@name} paw!"
-    @blocks+=1
-end
+
+    def shoot
+        puts "#{@name} for 3, bangggg"
+        @score+=3
+    end
+
+    def pass
+        puts "#{@name} nice assists"
+        @assists+=1
+    end
+
+    def jump
+        puts "#{@name} reboundo!"
+        @rebounds+=1
+    end
+
+    def swipe
+        puts "#{@name} swish he steals the ball!!"
+        @steals+=1
+    end
+
+    def defense
+        puts "#{@name} paw!"
+        @blocks+=1
+    end
+
 end
 
 #solution#2

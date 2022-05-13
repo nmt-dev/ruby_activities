@@ -29,3 +29,5 @@ end
 
 #properties are private to the class
 #call properties from instance method inside the class
+
+#class inheritance
