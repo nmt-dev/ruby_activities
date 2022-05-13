@@ -12,6 +12,10 @@ class Employee
         !@status
     end
 
+    def resign
+    @status = false
+    end
+
 end
 
 class Manager<Employee
@@ -32,3 +36,15 @@ class BackEndEngineer <SoftwareEngineer
     end
 end
 
+class CTO<Employee
+    attr_reader :equity
+    def initialize(age, sex, equity)
+        super(age, sex)
+        @equity = equity
+    end
+    
+    def resign
+        puts "Some additional paperworks"
+        super
+    end
+end
