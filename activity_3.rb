@@ -1,5 +1,5 @@
 #solution #1
-class Basketball_player
+class BasketballPlayer
     attr_accessor :name, :jersey_number, :score, :assists, :rebounds, :steals, :blocks
 
     def initialize(name, jersey_number, score=0, assists=0, rebounds=0, steals=0, blocks=0)
