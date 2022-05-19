@@ -56,8 +56,15 @@ DELETE FROM
 WHERE
     id = 1
 
-    
+
 SELECT
     *
 FROM
     students;
+
+SELECT
+    COUNT(id)
+FROM
+    students
+
+    
